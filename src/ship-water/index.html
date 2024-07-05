@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta
+      name="facebook-domain-verification"
+      content="5y3btl0uf4xjm21c1ttl17a33zto4y"
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:title" content="متجر مجد الخليج" />
+    <meta property="og:type" content="ecommerce" />
+    <meta property="og:url" content="glorygulf.store" />
+    <meta property="og:site_name" content="متجر مجد الخليج" />
+    <meta
+      property="og:description"
+      content="موقع للتجارة الإلكترونية حيث تجد المنتجات العصرية والخصومات والمزيد."
+    />
+    <meta
+      property="og:image"
+      content="https://ecom-glory.netlify.app/water-ship/hero.webp"
+    />
+    <meta
+      property="og:image:secure"
+      content="https://ecom-glory.netlify.app/water-ship/hero.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>سفينة الرحلات</title>
+  </head>
+  <body style="margin: auto; max-width: 37.5rem">
+    <!--! NAVBAR -->
+    <header class="container-style">
+      <nav class="nav">
+        <img src="/bag.svg" alt="menu" srcset="" />
+        <a href="#">
+          <div class="logo-container">
+            <img
+              src="/logo.png"
+              style="scale: 1.5"
+              height="48"
+              width="48"
+              alt="logo"
+              class="logo"
+            />
+          </div>
+        </a>
+        <img src="/menu.svg" alt="menu" srcset="" />
+      </nav>
+
+      <div id="mobileMenu" class="mobile-menu">
+        <div class="menu-header">
+          <i class="fa fa-times w-6 h-6 cursor-pointer" id="menuClose"></i>
+        </div>
+        <div class="menu-links">
+          <a href="/">الرئيسية</a>
+          <a href="/products">آخر المنتجات</a>
+          <a href="/">إتصل بنا</a>
+        </div>
+      </div>
+    </header>
+    <!--! END OF NAVBAR -->
+    <main>
+      <!--! HERO SECTION -->
+      <div>
+        <div class="bg-white">
+          <img
+            alt="hero section"
+            style="width: 100%; min-height: 400px"
+            src="/public/water-ship/hero.webp"
+          />
+          <div class="p-1 stacked">
+            <h1 class="lg">ديكور السفينة العجيبة </h1>
+            <p>نموذج سفينة للتزين تضعه في منزلك او مكتبك او حتى سيارتك</p>
+            <a href="#checkout">
+              <button id="go-checkout" class="button mt-1">
+                أحصل عليها الآن
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--! HERO SECTION -->
+      <!--! SECTION 1 -->
+      <section class="card-container">
+        <div class="bg-white rounded">
+          <img
+            src="https://img.fruugo.com/product/7/31/1258783317_max.jpg"
+            alt="gif"
+            style="width: 100%; height: 350px"
+            loading="lazy"
+          />
+          <div class="p-1 stacked">
+            <h1 class="lg">مظهرها جدا جميل</h1>
+            <p style="width: 90%">
+              تستطيع وضعها في منزلك او مكتبك او حتى سيارتك
+            </p> 
+          </div>
+        </div>
+      </section>
+
+      <!--! END OF SECTION 1 -->
+      <section class="card-container">
+        <div class="bg-white rounded">
+          <video muted  style="width: 100%; height: 300px;" loop autoplay>
+            <source src="/public/water-ship/vid-2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="p-1 stacked">
+            <h1 class="lg">تشعرك بالاسترخاء</h1>
+            <p>صدقني، مجرد تحريكها يشعرك بالاسترخاء ويخفف عنك التوتر</p>
+          </div> 
+        </div>
+      </section>
+      <!--! END OF SECTION 1 -->
+      <!--! SECTION 3 -->
+      <section class="card-container">
+        <div class="bg-white rounded">
+          <img
+            src="/public/water-ship/hero-2.webp"
+            alt="gif"
+            style="width: 100%; min-height: 320px"
+            loading="lazy"
+          />
+          <div class="p-1 stacked">
+            <h1 class="lg">شكلها جدا جميل في مكتبك</h1>
+            <!-- <p style="width: 90%">
+              دون الحاجة إلى الحفر أو تلف الحائط، تصميمه الأنيق والمدمج يجعله ..
+              مثاليًا للاستخدام في المنازل، المكاتب، والمتاجر
+            </p> -->
+          </div>
+        </div>
+      </section>
+      <!--! END OF SECTION 3 -->
+      <!--! CHECKOUT -->
+      <section id="checkout" class="rounded">
+        <div>
+          <div class="text-center">
+            <h1 id="command-text">طلب المنتج</h1>
+            <p>لطلب المنتج المرجو إدخال المعلومات أسفله</p>
+          </div>
+          <div class="mt-1">
+            <input
+              required
+              id="user-name-input"
+              class="input"
+              type="text"
+              placeholder="الإسم"
+            />
+            <input
+               required
+              id="user-phone-input"
+              class="input"
+              type="number"
+              placeholder="رقم الهاتف"
+            />
+            <input
+               required
+              id="user-city-input"
+              class="input"
+              type="text"
+              placeholder="المدينة"
+            />
+          </div>
+          <div>
+            <div>
+              <!-- <h1 id="price">105<span class="md-font">ريال سعودي</span></h1> -->
+              <div
+                class="price-info"
+              >
+                <p class="element-info">سعر المنتج</p>
+                <p class="dash-p">
+                  --------------
+                </p>
+                <p id="product-price">
+                  105 ريال
+                </p>
+              </div>
+              <div
+               class="price-info"
+              >
+                <p class="element-info">سعر التوصيل</p>
+                <p class="dash-p">
+                  --------------
+                </p>
+                <p
+                 id="delivery-price"
+                >
+                  26 ريال
+                </p>
+              </div>
+
+              <div
+               class="offer-holder"
+              >
+                <div
+                id="normal-offer"
+                class="offer selected-offer"
+           
+                >
+                <div class="unselectable">
+                  <h3>عرض عادي</h3>
+                  <p>قطعة بثمن <span class="price-offer">105</span> ريال</p></p>
+                </div>
+                </div>
+                <div
+                id="special-offer"
+                  class="offer"
+                >
+                <div class="unselectable">
+                  <h3>عرض حصري</h3>
+                  <p>أطلب قطعتين ب <span class="price-offer special-offer-price" >160</span> ريال</p>
+                </div>
+                </div>
+              </div>
+              <div
+                class="price-info "
+                id="total-container"
+              >
+                <p class="element-info" id="total-element">المجموع</p>
+                <p class="dash-p">
+                  ===========
+                </p>
+                <p  id="total-displayer">
+                  105  ريال سعودي
+                </p>
+              </div>
+            </div>
+            <button class="button mt-1" id="cta-btn">
+              أطلب و إدفع عند الإستلام
+            </button>
+          </div>
+          <div id="cod-features">
+            <div class="single-feature">
+              <img
+                height="80"
+                width="80"
+                src="/cod-features/cash-on-deliver.png"
+                alt=""
+              />
+              <p class="feature-text">التوصيل مجاني</p>
+            </div>
+            <div class="single-feature">
+              <img
+                height="80"
+                width="80"
+                src="/cod-features/delivery.png"
+                alt=""
+              />
+              <p class="feature-text">الدفع عند الإستلام</p>
+            </div>
+            <div class="single-feature">
+              <img
+                height="80"
+                width="80"
+                src="/cod-features/return.png"
+                alt=""
+              />
+              <p class="feature-text">ضمان الاسترجاع</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--! CHECKOUT -->
+    </main>
+    <!--! END OF SECTION 0 -->
+    <section class="card-container">
+      <div class="bg-white rounded">
+        <video muted  style="width: 100%;" loop autoplay>
+          <source src="/public/water-ship/vid-1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <!-- <div class="p-1 stacked">
+          <h1 class="lg">الحل المثالي لي راح يهنيك</h1>
+          <p>ماتعب نفسك من اليوم بغلق باب غرفتك أو خزانتك مع هذا الجهاز</p>
+        </div> -->
+      </div>
+    </section>
+    <!--! END OF SECTION 0 -->
+    <!--! SECTION 1 AF -->
+    <!-- <section class="card-container">
+      <div class="bg-white rounded">
+        <img
+          style="width: 100%; min-height: 320px"
+          src="https://cdn.youcan.shop/stores/cacdc9cf8b91d21d6ef561bd08c35618/others/mhz1DlV6NXn1qhImkiTtqUMuQyIdhUqjswZtATJ2.jpeg"
+          alt="gif"
+          loading="lazy"
+        />
+        <div class="p-1 stacked">
+          <h1 class="lg">إستخدامات كثيرة</h1>
+          <p>تستطيع تركبو في النوافذ الأبواب وحتى الخزانات</p>
+        </div>
+      </div>
+    </section> -->
+    <!--! END SECTION 1 AF -->
+
+    <!--! SECTION 2 AF -->
+    <section class="card-container">
+      <div class="bg-white rounded">
+        <img
+          style="width: 100%; min-height: 380px"
+          src="https://m.media-amazon.com/images/I/51BFDcL8cuL._AC_UF894,1000_QL80_.jpg"
+          alt="gif"
+          loading="lazy"
+        />
+      </div>
+    </section>
+    <section class="card-container">
+      <div class="bg-white rounded">
+        <img
+          style="width: 100%; min-height: 380px"
+          src="/public/water-ship/second.webp"
+          alt="gif"
+          loading="lazy"
+        />
+      </div>
+    </section>
+    <!--! END SECTION 2 AF -->
+    <!--! SECTION 1 AF -->
+    <!--! END SECTION 1 AF -->
+    <footer class="footer">
+      <div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+          "
+        >
+          <img src="/logo.png" height="85" width="85" alt="logo" class="logo" />
+        </div>
+      </div>
+
+      <div>
+        <h4 style="color: white; margin-top: 2rem">تواصل معنا</h4>
+        <div>
+          <div class="social-container">
+            <img
+              src="/public/icons/x.png"
+              alt="facebook icon"
+              width="56"
+              height="56"
+            />
+            <img
+              src="/public/icons/facebook.png"
+              alt="facebook icon"
+              width="64"
+              height="64"
+            />
+            <img
+              src="/public/icons/instagram.png"
+              alt="facebook icon"
+              width="64"
+              height="64"
+            />
+          </div>
+        </div>
+      </div>
+
+      <ul class="">
+        <li class="">
+          <ul class="">
+            <li>
+              <a href="#">الرئيسية</a>
+            </li>
+            <li>
+              <a href="#">المنتجات</a>
+            </li>
+            <li>
+              <a href="https://www.codoffers.net/return-policy/"> سياسة الإسترجاع والإستبدال</a>
+            </li>
+            <li>
+              <a href="https://www.codoffers.net/policy/">شروط الاستخدام</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="mt-2">
+        <p style="color: white; font-weight: 300!; font-size: 0.8rem">
+          &copy; 2024 GloryGulf جميع الحقوق محفوظة
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="./app.ts"></script>
+  </body>
+</html>
