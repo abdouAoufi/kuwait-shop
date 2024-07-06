@@ -14,26 +14,26 @@ import {
   getQueryParam,
 } from "../util/util";
 
-const normalOfferDiv = document.getElementById("normal-offer");
-const specialOfferDiv = document.getElementById("special-offer");
-const specialOfferPar: HTMLParagraphElement | null =
-  document.querySelector("#total-displayer");
+// const normalOfferDiv = document.getElementById("normal-offer");
+// const specialOfferDiv = document.getElementById("special-offer");
+// const specialOfferPar: HTMLParagraphElement | null =
+    document.querySelector("#total-displayer");
 
 const ctaBtn: HTMLButtonElement | null = document.querySelector("#cta-btn");
 const userNameInput: HTMLInputElement | null =
-  document.querySelector("#user-name-input");
+    document.querySelector("#user-name-input");
 const userPhoneInput: HTMLInputElement | null =
-  document.querySelector("#user-phone-input");
+    document.querySelector("#user-phone-input");
 const userCityInput: HTMLInputElement | null =
-  document.querySelector("#user-city-input");
+    document.querySelector("#user-city-input");
 
 const basicInfo = {
-  productId: 8,
-  productName: "door device",
-  currency: getCurrencyByreg[COUNTRIES.SAUDIA],
-  price: 99,
+  productId: 10,
+  productName: "water tool",
+  currency: getCurrencyByreg[COUNTRIES.KUWAIT],
+  price: 9,
   fbc: getQueryParam("fbclid"),
-  currencyCode: getCurrencyCodeByreg[COUNTRIES.SAUDIA],
+  currencyCode: getCurrencyCodeByreg[COUNTRIES.KUWAIT],
 };
 
 let total = basicInfo.price;
@@ -60,25 +60,25 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
   }, 3000);
 
-  specialOfferDiv?.addEventListener("click", () => {
-    total = 160;
-    if (specialOfferPar && normalOfferDiv) {
-      specialOfferPar.innerText =
-        total + "  " + getCurrencyByreg[COUNTRIES.SAUDIA] + "  ";
-      specialOfferDiv.classList.add("selected-offer");
-      normalOfferDiv.classList.remove("selected-offer");
-    }
-  });
-  normalOfferDiv?.addEventListener("click", () => {
-    total = basicInfo.price;
-    if (specialOfferPar && specialOfferDiv) {
-      specialOfferPar.innerText =
-        total + "  " + getCurrencyByreg[COUNTRIES.SAUDIA] + "  ";
-      specialOfferPar.innerText = total + getCurrencyByreg[COUNTRIES.SAUDIA];
-      specialOfferDiv.classList.remove("selected-offer");
-      normalOfferDiv.classList.add("selected-offer");
-    }
-  });
+  // specialOfferDiv?.addEventListener("click", () => {
+  //   total = 160;
+  //   if (specialOfferPar && normalOfferDiv) {
+  //     specialOfferPar.innerText =
+  //         total + "  " + getCurrencyByreg[COUNTRIES.SAUDIA] + "  ";
+  //     specialOfferDiv.classList.add("selected-offer");
+  //     normalOfferDiv.classList.remove("selected-offer");
+  //   }
+  // });
+  // normalOfferDiv?.addEventListener("click", () => {
+  //   total = basicInfo.price;
+  //   if (specialOfferPar && specialOfferDiv) {
+  //     specialOfferPar.innerText =
+  //         total + "  " + getCurrencyByreg[COUNTRIES.SAUDIA] + "  ";
+  //     specialOfferPar.innerText = total + getCurrencyByreg[COUNTRIES.SAUDIA];
+  //     specialOfferDiv.classList.remove("selected-offer");
+  //     normalOfferDiv.classList.add("selected-offer");
+  //   }
+  // });
   ctaBtn?.addEventListener("click", () => {
     ctaBtn.innerHTML = `<div class="loader"></div>`;
     handleSubmit();
@@ -90,27 +90,27 @@ const handleSubmit = () => {
     name: userNameInput?.value,
     phone: userPhoneInput?.value,
     city: userCityInput?.value,
-    country: COUNTRIES.SAUDIA,
+    country: COUNTRIES.KUWAIT,
     ...basicInfo,
     total,
   };
   createLead(payload)
-    .then(() => {
-      if (window?.fbq) {
-        window?.fbq("track", "Lead", {
-          content_name: "Lead Form Submission",
-          value: 0.0,
-          currency: "USD",
-        });
-      }
-      window.location.href = "/thank-you";
-    })
-    .catch(() => {
-      alert("حدث خطأ أثناء إرسال البيانات المرجو تحديث الصفحة");
-    })
-    .finally(() => {
-      if (ctaBtn) ctaBtn.innerHTML = `أطلب و إدفع عند الإستلام`;
-    });
+      .then(() => {
+        if (window?.fbq) {
+          window?.fbq("track", "Lead", {
+            content_name: "Lead Form Submission",
+            value: 0.0,
+            currency: "USD",
+          });
+        }
+        window.location.href = "/thank-you";
+      })
+      .catch(() => {
+        alert("حدث خطأ أثناء إرسال البيانات المرجو تحديث الصفحة");
+      })
+      .finally(() => {
+        if (ctaBtn) ctaBtn.innerHTML = `أطلب و إدفع عند الإستلام`;
+      });
 };
 
 const handleAddGoogleAnalytics = () => {

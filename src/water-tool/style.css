@@ -14,7 +14,7 @@
   --color-text-primary: #3f3b3b;
   --color-text-secondary: #575151;
   --color-text-light: #5f6368;
-  --color-bg-primary: #282114;
+  --color-bg-primary: #004aad;
   --color-bg-saudia: #086972;
   --color-bg-secondary: #343a40;
   --color-bg-highlight: #facf5a;
@@ -88,7 +88,7 @@ h6 {
 }
 p {
   font-size: 1.1rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--color-text-light);
 }
 
@@ -123,9 +123,9 @@ main {
 header {
   background: rgb(40, 33, 20);
   background: linear-gradient(
-    45deg,
-    rgba(40, 33, 20, 1) 0%,
-    rgba(132, 83, 20, 1) 100%
+          45deg,
+          var(--color-bg-primary) 0%,
+          rgba(132, 83, 20, .8) 100%
   );
   color: #fff;
   padding: 1rem 0;
@@ -187,7 +187,7 @@ m-1 {
   padding: 1rem 1.25rem;
   color: white;
   font-weight: bold;
-  background-color: var(--color-bg-saudia);
+  background-color: var(--color-bg-primary);
   border: none;
   border-radius: 1.75rem;
   font-size: 1.2rem;
@@ -276,7 +276,7 @@ m-1 {
 #command-text {
   color: var(--color-bg-primary);
   font-size: 2.5rem;
-  text-shadow: --color-bg-primary 0px 0px 42px;
+
 }
 #price {
   color: var(--color-bg-primary);
@@ -317,10 +317,11 @@ m-1 {
 .price-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .element-info {
+  margin : .3rem 0;
   font-size: 1.2rem;
   color: #5f6368;
 }
@@ -331,7 +332,7 @@ m-1 {
 }
 
 #product-price {
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   font-size: 1.2rem;
   color: var(--color-bg-secondary);
   font-weight: 500;
@@ -342,14 +343,14 @@ m-1 {
 }
 
 #total-displayer {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  color: var(--color-bg-saudia);
+  color: var(--color-bg-primary)
 }
 
 #delivery-price {
   font-size: 1.2rem;
-  font-weight: semi-bold;
+  font-weight: 500;
   text-decoration: line-through;
   color: #f5587b;
 }
