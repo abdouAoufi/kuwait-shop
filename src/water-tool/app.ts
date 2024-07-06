@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     country: locationData?.country,
     fbc: getQueryParam("fbclid"),
   }).then(console.log);
-  initFbPixel();
+  // initFbPixel();
   setTimeout(() => {
     if (window?.fbq)
       window?.fbq("track", "ViewContent", {
@@ -162,6 +162,7 @@ const handleAddGoogleAnalytics = () => {
 };
 
 const initFbPixel = () => {
+  return;
   var fbScript = document.createElement("script");
   fbScript.innerHTML = `
     !(function (f, b, e, v, n, t, s) {
