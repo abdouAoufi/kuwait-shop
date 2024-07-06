@@ -7,9 +7,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         venom: resolve(__dirname, '/src/venom-bee/index.html'),
-        "ship-water": resolve(__dirname, '/src/ship-water/index.html'),
-        "thank-you": resolve(__dirname, '/src/thank-you/index.html'),
-        "door-device": resolve(__dirname, '/src/self-close/index.html')
+        "water-tool": resolve(__dirname, '/src/water-tool/index.html'),
+        "thank-you": resolve(__dirname, '/src/thank-you/index.html')
       }
     }
   }

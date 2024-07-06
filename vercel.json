@@ -1,9 +1,7 @@
 {
     "rewrites": [
       { "source": "/", "destination": "/index.html" },
-      { "source": "/venom-bee", "destination": "src/venom-bee/index.html" },
-      { "source": "/ship-water", "destination": "src/ship-water/index.html" },
-      { "source": "/thank-you", "destination": "src/thank-you/index.html" },
-      { "source": "/door-device", "destination": "src/self-close/index.html" }
+      { "source": "/water-tool", "destination": "src/water-tool/index.html" },
+      { "source": "/thank-you", "destination": "src/thank-you/index.html" }
     ]
   }
