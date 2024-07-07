@@ -30,6 +30,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.single-feature img{
+  width: 75px;
+}
+
 body {
   font-family: "IBM Plex Sans Arabic", sans-serif;
   font-weight: 200;
