@@ -5,7 +5,7 @@ declare global {
 }
 
 import { fetchLocationData } from "../api/queries-mutations/getLocation";
-import { createLead } from "../api/queries-mutations/lead";
+import { createLead, trackViewLead } from "../api/queries-mutations/lead";
 import {
   COUNTRIES,
   disallowedCountries,
@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   // ! CHECK USER COUNTRY ==============================
   if (disallowedCountries.includes(locationData?.country)) return;
   handleAddGoogleAnalytics();
-  initFbPixel();      
-  ({
+  initFbPixel();
+  trackViewLead({
     country: locationData?.country,
     fbc: getQueryParam("fbclid"),
   }).then(console.log);
