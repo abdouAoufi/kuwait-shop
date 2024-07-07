@@ -5,7 +5,7 @@ declare global {
 }
 
 import { fetchLocationData } from "../api/queries-mutations/getLocation";
-import { createLead, trackViewLead } from "../api/queries-mutations/lead";
+import { createLead } from "../api/queries-mutations/lead";
 import {
   COUNTRIES,
   disallowedCountries,
