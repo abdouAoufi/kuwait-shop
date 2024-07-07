@@ -31,7 +31,7 @@ const basicInfo = {
   productId: 10,
   productName: "water tool",
   currency: getCurrencyByreg[COUNTRIES.KUWAIT],
-  price: 9,
+  price: 13,
   fbc: getQueryParam("fbclid"),
   currencyCode: getCurrencyCodeByreg[COUNTRIES.KUWAIT],
 };
