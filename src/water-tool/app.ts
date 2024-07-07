@@ -79,12 +79,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   //     normalOfferDiv.classList.add("selected-offer");
   //   }
   // });
-  ctaBtn?.addEventListener("click", () => {
-    ctaBtn.innerHTML = `<div class="loader"></div>`;
-    handleSubmit();
-  });
+
 });
 
+ctaBtn?.addEventListener("click", () => {
+  ctaBtn.innerHTML = `<div class="loader"></div>`;
+  handleSubmit();
+});
 const handleSubmit = () => {
   const payload = {
     name: userNameInput?.value,
